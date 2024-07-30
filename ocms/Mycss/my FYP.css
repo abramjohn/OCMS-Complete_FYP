@@ -1,0 +1,413 @@
+hy*
+{
+	padding: 0;
+	margin: 0;
+}
+section /*change image after paragraph*/
+{
+  width: 100%;
+	height: 100vh;
+	box-sizing: border-box;
+}
+section.sec2
+{
+	background: url();
+	background-size: cover;
+	background-attachment: fixed;
+}
+section.sec2 h1
+{
+	margin: 0;
+	padding: 0;
+	font-size: 60px;
+	color: #262626;
+}
+section.sec2 p
+{
+	font-size: 18px;
+}
+section.sec3
+{
+	background: url();
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+/******************************
+responsive image
+******************************/
+.respon-img 
+{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+/*******************************
+scroll down css
+*******************************/
+.scroll-dwn 
+{
+	animation: animate 0.8s linear infinite;
+}
+@keyframes animate
+{
+	0%
+	{
+		transform: translateY(-20px)
+	}
+}
+
+
+/*******************************
+nav bar css
+*******************************/
+
+.mynav{  } 
+
+.navbar{ background:rgba(0,0,0,0.7);; } 
+
+.navbar .navbar-brand{ color : #FFF; font-weight: bolder; font-size: 1.3em; }
+
+.navbar .nav-item a{ color: #FFF !important; }
+
+.navbar .dropdown-menu{ background-color: rgba(0,0,0,0.7); }
+
+.dropdown-item:hover{ background-color: rgba(0,0,0,0); }
+
+.dropdown:hover>.dropdown-menu{display: block;}
+
+.maga-menu{width: 1000px; overflow: hidden; padding: 10px;}
+
+
+.section-my {
+  position: relative;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.section-my a {
+  text-align: center;
+  font-size: 2rem;
+  padding: 20px;
+  margin: 15px;
+  z-index: 2;
+  
+}
+
+/**************************
+video on background
+**************************/
+
+
+.video-r
+{
+	width: 100%;
+	height: auto;
+	max-height: auto;
+	overflow: hidden;
+	position: relative;
+	display: block;
+	max-width: 100%;
+	min-width: 100%;
+	
+}
+
+.overlay-con
+{
+	position: absolute;
+	top: 65%;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
+
+
+/******************************
+nav bar bottem border
+******************************/
+.hover-border{
+	display: inline-block;
+	margin: 10px 5px;
+	text-transform: uppercase;
+	position: relative;
+	text-decoration: none;
+}
+
+.hover-border::after{
+	content: '';
+	width: 0px;
+	height: 1.6px;
+	background: #CF9924;
+	position: absolute;
+	bottom: 0%;
+	left: 50%;
+	border-radius: 10px;
+	transition: all 500ms ease;
+}
+.hover-border:hover::after
+{
+	left: 0%;
+	width: 100%;
+}
+
+/*********************************************
+Dropdown bottem border
+*********************************************/
+.left-border
+{
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	text-align: left;
+	font-size: 16px;
+	color: #CF9924;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: .5s;
+}
+.left-border::before
+{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #CF9924;
+	/*z-index: -1;    add if get error*/
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: .5s;
+}
+.left-border:hover::before
+{
+	transform: scaleX(1)
+}
+
+
+
+/******************************************
+Social Media Styling
+*******************************************/
+.social-media
+{
+	color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-media ul
+{
+	margin: 0;
+	padding: 0;
+	display: flex
+}
+
+.social-media ul li 
+{
+	list-style: none;
+	margin: 0 5px;
+}
+
+.social-media ul li a
+{
+	color: #FFFFFF;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	height:0px;
+	text-decoration: none;
+	
+}
+.social-media ul li:nth-child(1) a:hover
+{
+	color: #3b5999;
+}
+.social-media ul li:nth-child(2) a:hover
+{
+	color: #55acee;
+}.social-media ul li:nth-child(3) a:hover
+{
+	color: #dd4b39;
+}.social-media ul li:nth-child(4) a:hover
+{
+	color: #e4405f;
+}
+
+
+/************************************************
+footer items hover
+*************************************************/
+.footitem a
+{
+	list-style: none;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	font-size: 20px;
+}
+
+.footitem a:hover
+{
+	color: #6F6F6F;
+	text-decoration: none;
+}
+
+
+/*************************************************
+login and register css
+*************************************************/
+.txtfeild
+{
+	padding: 8px 0;
+	margin: 8px 0;
+	border-bottom: 2px solid #4caf50;
+	width: 100%;
+	overflow: hidden;
+	color: white;
+}
+
+.txtfeild input
+{
+	border: none;
+	outline: none;
+	background: none;
+	color: white;
+	
+}
+.txtfeild textarea
+{
+	border: none;
+	outline: none;
+	width: 100%;
+	background: transparent;
+	color: white;
+	
+}
+
+.txtfeild i
+{
+	width: 20px;
+	margin: 5px;
+	
+	align-content: center;
+}
+
+
+/*****************************************************
+contact us image and text
+*****************************************************/
+
+.intro
+{
+	background-image: url( ../image/Cont_us.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+} 
+.pos
+{
+	font-size: 55px
+}
+.fon_cust
+{
+	font-size: 45px;
+	font-style: italic;
+	border: #FFFFFF solid 10px;
+}
+
+/*****************************************************
+select box css for options
+*****************************************************/
+
+body{
+    font-family: "helvetica";
+    font-size: 100%;
+}
+
+select{
+    border:none;
+    margin-top: 10px;
+	width: 540px;
+    
+    color:gray;
+    
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    
+    cursor: pointer;
+    padding: 8px 0;
+	margin: 8px 0;
+	border-bottom: 2px solid #4caf50;
+	overflow: hidden;
+    
+}
+
+.glyphIconMethod{
+    display: inline-block;
+    position: relative;
+}
+
+.glyphIconMethod select{background: transparent;} 
+
+
+
+.glyphIconMethod::after{
+    content: " \f107";
+    font-family: "FontAwesome";
+    color: #4caf50;
+    position: absolute;
+    right:.5rem;
+    top:15px;
+    
+    pointer-events: none;
+}
+
+select:focus{
+    padding: 8px 0;
+	margin: 8px 0;
+	border-bottom: 2px solid #4caf50;
+	overflow: hidden;
+}
+
+select::-ms-expand{
+    display: none;
+}
+
+
+/***********************************************
+heading of side list add to cart
+*************************************************/
+
+.heading-txt
+{
+	position: relative;
+	display: block;
+	font-size: 26px;
+	color: #CF9924;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+}
+
+/***********************************************
+image size add to cart
+*************************************************/
+.items-size
+{
+	height: 350px;
+	width: 100%;
+	background-size: cover;
+}
+
+
